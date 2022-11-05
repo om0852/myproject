@@ -1,7 +1,7 @@
 import './App.css';
 import './app1.css';
 import Navbar from './Navbar';
-import { Routes, Route } from "react-router-dom"
+// import { Routes, Route } from "react-router-dom"
 import Textarea from './Textarea';
 import React,{useState} from 'react';
 import About from './About';
@@ -31,12 +31,14 @@ function App() {
   return (
     <div className="App">
       <Navbar mode={mode} ontoggle={ontoggle} />
+      <Textarea mystyle={mystyle}/>
+      <About mystyle={mystyle}/> 
       {/* <Textarea/> */}
-      <Routes>
-        <Route path="/Textarea" element={ <Textarea mystyle={mystyle}/> } />
-        <Route path="/about" element={ <About mystyle={mystyle}/> } />
+      {/* <Routes> */}
+        {/* <Route path="/Textarea" element={ <Textarea mystyle={mystyle}/> } /> */}
+        {/* <Route path="/about" element={ <About mystyle={mystyle}/> } /> */}
         {/* <Route path="contact" element={ <Contact/> } /> */}
-      </Routes>
+      {/* </Routes> */}
       
     </div>
   );
